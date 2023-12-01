@@ -59,7 +59,6 @@ aside{
     margin-right: 20px;
     display: flex;
     justify-content: center;
-
 }
 .li-nav{
     margin: 10px;
@@ -94,12 +93,16 @@ aside{
     align-items: center;
     color: white;
 }
+
 .li-sosmed{
     margin: 120px;
 }
 .li-sosmed a{
     color: white;
     font-size: 29px;
+}
+.li-sosmed:hover{
+    transform: translateY(-12px);
 }
 
 
@@ -129,15 +132,26 @@ aside{
     margin-top: 20px;
 }
 
-.li-sosmed:hover{
-    transform: translateY(-12px);
-}
+
 
 /* UNTUK UKURAN DEVICE MOBILE */
 @media screen and (max-width: 500px) {
-    .konten, aside {
+    .konten, aside{
       width: 100%;
       padding: 0;
     }
-
+    .navigation-list{
+        left: 0cap;
+        right: auto;
+    }
+    .ul-nav{
+        margin-left: 5px;
+    }
+    .li-nav{
+        margin: 2px;
+        padding: 8px;
+    }
+    .li-sosmed{
+    margin: 15px;
+    }
 }
